@@ -1,0 +1,16 @@
+.app-shell { min-height: 100vh; display: flex; flex-direction: column; }
+.navbar { display: flex; align-items: center; justify-content: space-between; padding: 1rem clamp(1rem, 5vw, 5rem); background: white; border-bottom: 1px solid #e2e8f0; }
+.brand { display: flex; align-items: center; gap: .5rem; color: #0f766e; font-size: 1.25rem; font-weight: 800; }
+.nav-links { display: flex; align-items: center; gap: 1.5rem; font-weight: 600; }
+.nav-links a { display: flex; align-items: center; gap: .35rem; }
+.nav-links a:hover { color: #0f766e; }
+.menu-button { display: none; border: 0; background: none; color: #172033; }
+.hero { padding: clamp(5rem, 13vw, 10rem) clamp(1rem, 10vw, 10rem); background: linear-gradient(120deg, #ccfbf1, #f0fdfa 55%, #fff); }
+.hero h1, .section h1, .section h2 { max-width: 700px; margin: .5rem 0 1rem; color: #0f172a; font-size: clamp(2.25rem, 6vw, 4.5rem); line-height: 1.05; }
+.hero p:not(.eyebrow), .section p:not(.eyebrow) { max-width: 600px; color: #475569; font-size: 1.1rem; }
+.eyebrow { color: #0f766e; font-size: .8rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+.button { display: inline-block; margin-top: 1.5rem; padding: .85rem 1.2rem; border-radius: .5rem; background: #0f766e; color: white; font-weight: 700; }
+.section { flex: 1; padding: clamp(3rem, 8vw, 7rem) clamp(1rem, 10vw, 10rem); }
+.section h1, .section h2 { font-size: clamp(2rem, 4vw, 3.5rem); }
+footer { padding: 1.5rem clamp(1rem, 5vw, 5rem); border-top: 1px solid #e2e8f0; color: #64748b; font-size: .9rem; }
+@media (max-width: 640px) { .menu-button { display: block; } .nav-links { display: none; position: absolute; top: 65px; left: 0; right: 0; flex-direction: column; align-items: stretch; padding: 1rem; background: white; border-bottom: 1px solid #e2e8f0; } .nav-links.open { display: flex; } }
