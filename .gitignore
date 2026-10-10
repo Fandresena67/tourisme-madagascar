@@ -26,10 +26,6 @@ dist/
 build/
 *.local
 
-# Prisma
-prisma/*.db
-prisma/*.db.tmp
-
 # Logs
 logs/
 *.log

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap et URLs canoniques absolues : à renseigner après le déploiement,
+# quand le domaine de production sera connu (aucun domaine inventé ici).
